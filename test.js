@@ -39,7 +39,7 @@ function handleRequest(request) {
      <h1 style="font-size: 3rem;" >ウメハラ名言Bot</h1>
      <p style="font-size: 3rem;">${messages[random].message}</p>
      <br>
-     <p style="margin 0 20% 0 20%;">{messages[random].background}</p>
+     <p style="margin 0 20% 0 20%;">${messages[random].background}</p>
     </html>`;
 
   return new Response(html, {

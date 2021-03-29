@@ -1,6 +1,6 @@
 function handleRequest(request) {
   const messages = [
-    { message: "あまりにも驚いてじゃんがら食いに行っちゃったよ", background: "" },
+    { message: "あまりにも驚いてじゃんがら食いに行っちゃったよ", background: "秋葉原で朝イチの1プレイ目でサスカッチにいきなり負けたときのセリフ。たかが1敗のはずだが、氏にとっては事件であった。この後食べ終わって帰ってきて、今なお語り草となっている伝説の286連勝を記録することになる。" },
     { message: "あんまりいじめちゃかわいそうだよ", background: "" },
     { message: "今の俺強すぎるよ", background: "" },
     { message: "いやー、体を洗いすぎた", background: "" },
@@ -36,10 +36,11 @@ function handleRequest(request) {
   ]
   const random = Math.floor(Math.random() * messages.length) 
   const html = `<html>
-     <h1 style="font-size: 3rem;" >ウメハラ名言Bot</h2>
+     <h1 style="font-size: 3rem;" >ウメハラ名言Bot</h1>
      <p style="font-size: 3rem;">${messages[random].message}</p>
      <br>
-     ${messages[random].background}
+     //<p>${messages[random].background}</p>
+     <p>${messages[0].background}</p>
     </html>`;
 
   return new Response(html, {

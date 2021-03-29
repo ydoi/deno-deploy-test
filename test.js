@@ -1,8 +1,14 @@
 function handleRequest(request) {
-  const message = "あまりにも驚いてじゃんがら食いに行っちゃったよ";
+  const messages = [
+    { message: "あまりにも驚いてじゃんがら食いに行っちゃったよ", background: "" },
+    { message: "あんまりいじめちゃかわいそうだよ", background: "" },
+  ]
+  const random = Math.floor(Math.random() * messages.length) 
   const html = `<html>
      <h1>ウメハラ名言Bot</h2>
-     ${message}
+     ${messages[random].message}
+     <br>
+     ${messages[random].background}
     </html>`;
 
   return new Response(html, {

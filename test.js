@@ -2,6 +2,37 @@ function handleRequest(request) {
   const messages = [
     { message: "あまりにも驚いてじゃんがら食いに行っちゃったよ", background: "" },
     { message: "あんまりいじめちゃかわいそうだよ", background: "" },
+    { message: "今の俺強すぎるよ", background: "" },
+    { message: "いやー、体を洗いすぎた", background: "" },
+    { message: "いや、なんか…大丈夫そう", background: "" },
+    { message: "いや、ん、とりあえず…意外と、弱ぇーな", background: "" },
+    { message: "色は超重要なんだけどね", background: "" },
+    { message: "俺その頃、超強かったじゃん？ｗ", background: "" },
+    { message: "俺の徹底したプレイスタイルにけっこうムキムキきてたらしいけどね", background: "" },
+    { message: "カバンの置き…置く場所がわからなくて", background: "" },
+    { message: "狩リノ…時間ダ", background: ""},
+    { message: "これ強Kが利きませんけど", background: ""},
+    { message: "3回くらいやれば今の柏木を崩してみせるよ", background: ""},
+    { message: "そんなもんシカトで良い", background: ""},
+    { message: "タマ無しキャラで最強はキャミィでしょ", background: "" },
+    { message: "つまんね", background: "" },
+    { message: "当然俺抜きの話だけどｗ", background: "" }, 
+    { message: "どうでもいい。どうでもいいとか口にすることすら、どうでもいい", background: "" }, 
+    { message: "解けなかった方程式が解け出した", background: "" }, 
+    { message: "何か…すげー楽…だったんですけど", background: ""},
+    { message: "何を言っているかわからないけど、何が言いたいかはわかる", background: ""},
+    { message: "人型は論外", background: ""},
+    { message: "負けないと思うんですけどね", background: ""},
+    { message: "負ける要素は無い", background: ""},
+    { message: "未来からの使者が1人だけいるって感じだった", background: ""},
+    { message: "ムーミン谷に悪魔がやってきた", background: ""},
+    { message: "虫じゃん。虫とか使うは無いじゃん", background: ""},
+    { message: "やる気全一は後の全一", background: ""},
+    { message: "よくがんばりましたね", background: ""},
+    { message: "よゆうでした", background: ""},
+    { message: "我ながらいい足跡を残すねぇｗ", background: ""},
+
+
   ]
   const random = Math.floor(Math.random() * messages.length) 
   const html = `<html>

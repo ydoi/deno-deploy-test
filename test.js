@@ -36,8 +36,8 @@ function handleRequest(request) {
   ]
   const random = Math.floor(Math.random() * messages.length) 
   const html = `<html>
-     <h1>ウメハラ名言Bot</h2>
-     ${messages[random].message}
+     <h1 style="font-size: 3rem;" >ウメハラ名言Bot</h2>
+     <p style="font-size: 3rem;">${messages[random].message}</p>
      <br>
      ${messages[random].background}
     </html>`;

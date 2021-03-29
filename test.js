@@ -35,12 +35,11 @@ function handleRequest(request) {
 
   ]
   const random = Math.floor(Math.random() * messages.length) 
-  const html = `<html>
+  const html = `<html style="text-align: center;">
      <h1 style="font-size: 3rem;" >ウメハラ名言Bot</h1>
      <p style="font-size: 3rem;">${messages[random].message}</p>
      <br>
-     //<p>${messages[random].background}</p>
-     <p>${messages[0].background}</p>
+     <p style="margin 0 20% 0 20%;">{messages[random].background}</p>
     </html>`;
 
   return new Response(html, {
